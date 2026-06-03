@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripova - Flight Booking</title>
+    <link rel="stylesheet" href="Homepage style.css">
+    <link rel="stylesheet" href="flight_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            Tripova
+        </div>
+        
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="index.html">Destination</a>
+            <a href="flight.html" class="active">Flight</a>
+            <a href="#">Booking</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="buttons">
+            <button class="login">Log in</button>
+            <button class="signup">Sign up</button>
+        </div>
+    </header>
+
+    <section class="flight-hero">
+        <div class="flight-hero-content">
+            <h1>Find Your Perfect Flight</h1>
+            <p>Discover amazing destinations across Thailand at the best prices</p>
+        </div>
+    </section>
+
+    <section class="search-box">
+    <h2>Search Flights</h2>
+
+    <div class="form-group">
+
+        <input type="text" placeholder="From (e.g., Bangkok)" id="from">
+
+        <input type="text" placeholder="To (e.g., Phuket)" id="to">
+
+        <div class="date-box">
+            <label>Departure Date</label>
+            <input type="date" id="departureDate">
+        </div>
+
+        <div class="date-box">
+            <label>Return Date</label>
+            <input type="date" id="returnDate">
+        </div>
+
+        <div class="passenger-box">
+            <label>Passengers</label>
+
+            <div class="counter">
+                <button type="button" onclick="decreasePassenger()">−</button>
+
+                <span id="passengerCount">1</span>
+
+                <button type="button" onclick="increasePassenger()">+</button>
+            </div>
+        </div>
+
+        <select id="flightClass">
+            <option>Economy Class</option>
+            <option>Business Class</option>
+            <option>First Class</option>
+        </select>
+
+        <button class="search-flight-btn">
+            Search Flight
+        </button>
+
+        </div>
+    </section>
+
+    <h2 class="section-title">Popular Thailand Destinations</h2>
+
+    <section class="flight-cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?q=80&w=1200&auto=format&fit=crop" alt="Bangkok">
+            <div class="card-content">
+                <h3>Bangkok</h3>
+                <p>Thailand's vibrant capital city.</p>
+                <p class="price">฿1,990</p>
+                <button class="view-details-btn">View Details</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?q=80&w=1200&auto=format&fit=crop" alt="Phuket">
+            <div class="card-content">
+                <h3>Phuket</h3>
+                <p>Beautiful beaches and island life.</p>
+                <p class="price">฿2,490</p>
+                <button class="view-details-btn">View Details</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=1200&auto=format&fit=crop" alt="Chiang Mai">
+            <div class="card-content">
+                <h3>Chiang Mai</h3>
+                <p>Explore mountains and culture.</p>
+                <p class="price">฿2,190</p>
+                <button class="view-details-btn">View Details</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1506744038136-462
+                <h3>Pattaya</h3>
+                <p>Vibrant nightlife and beaches.</p>
+                <p class="price">฿1,890</p>
+                <button class="view-details-btn">View Details</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop" alt="Ayutthaya">
+            <div class="card-content">
+                <h3>Ayutthaya</h3>
+                <p>Ancient ruins and rich history.</p>
+                <p class="price">฿1,690</p>
+                <button class="view-details-btn">View Details</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop" alt="Hua Hin">
+            <div class="card-content">
+                <h3>Hua Hin</h3>
+                <p>Relaxing beach town with royal heritage.</p>
+                <p class="price">฿1,790</p>
+                <button class="view-details-btn">View Details</button>
+            </div>
+                 
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop" alt="Krabi">
+            <div class="card-content">
+                <h3>Krabi</h3>
+                <p>Limestone cliffs and emerald waters.</p>
+                <p class="price">฿2,590</p>
+           <button class="view-details-btn">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tripova</h3>
+                <p>Creating unforgettable travel memories since 2020</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="home.html">Home</a>
+                <a href="index.html">Destinations</a>
+                <a href="flight.html">Flights</a>
+                <a href="#">About Us</a>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fa-solid fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fa-solid fa-envelope"></i> hello@tripova.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Tripova | Daily Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="flight.js"></script>
+</body>
+</html>

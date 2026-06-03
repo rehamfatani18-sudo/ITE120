@@ -25,8 +25,16 @@ header{
 }
 
 header h1{
-    font-size:45px;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
 }
+
+header p {
+    font-size: 1.2rem;
+}
+
 
 header p{
     font-size:18px;
@@ -93,7 +101,7 @@ button:hover{
 .section-title{
     text-align:center;
     margin:30px;
-    color:#023e8a;
+    color:#b6c2cb;
 }
 
 .flight-cards{
@@ -132,7 +140,7 @@ button:hover{
 
 footer{
     margin-top:40px;
-    background:#023e8a;
+    background:#2871d6;
     color:white;
     text-align:center;
     padding:20px;
